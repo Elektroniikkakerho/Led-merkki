@@ -124,7 +124,7 @@ Src hakemistossa on lediportit_oikein.h ja lediportit_väärin.h tiedostot joist
 
 Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
 
-##### Linux ja Mac
+#####  UNIX
 
 ```
 // kääntäminen
