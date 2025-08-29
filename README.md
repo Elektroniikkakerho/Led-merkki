@@ -1,153 +1,202 @@
-# Salama
-Sikin led salamaan ja Otitin led merkkiin koodi, piirilevy ja ohjeet
+# LED-MERKKI
+<img src="kuvia/salama.jpg" alt="alt" width="50%" height="50%"  title="Tämä kuva vaihtuu joskus gifiin 👀">
 
-## Piirilevyt
-### Mistä salama koostuu ja miten se toimii
+
+## Mistä koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
-Ledejä on 32 ja niille on 110 ohm etuvastukset.
-Salamassa on myös 5v regulaattori joka pienentää 9v paristosta saatavan jännitteen viiteen volttiin.
-Regulaattori vaatii toimiakseen kondensaattorit molemmille puolilleen.
-Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai toimittaa muuta toiminnallisuutta, mutta näitä ei ole koodissa toteutettu vielä.
+Ledit ovat multiplexattu (4x8 LED), ja kytketty yhdellä vastuksella per rivi.
+
+Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai toimittaa muuta toiminnallisuutta, mutta näitä ei ole koodissa toteutettu vieläkään.
+
 Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm mikrokontrollerille.
+Ohjelmointi hoituu Arduinon ISP:n kautta.
 
-![skema](kicad/kuvat/skema.svg "Skema on jotakuinkin tällainen")
+## Skeema
+![skeema](kicad/kuvat/skeema2.svg "Skema on jotakuinkin tällainen")
 
-### Osaluettelo
+## Osaluettelo
+<!--
   * 1 kpl  ATtiny861a SOIC
-  * 32 kpl sininen 3 mm diffusoitu led
-  * 4 kpl  110 Ohm 1206 smd-vastus
-  * 2 kpl  10 µF tantaalikondensaattori smd (paketti?)
-  * 1 kpl  Texas Instruments LP2981AIM5-5.0/NOPB Regulaattori sot23-5
-  * 1 kpl  palautuva kytkin (tyyppi?)
-  * 1 kpl  9v-paristolle paristoliitin
-  * 1 kpl  kuusi pinniä pitkän piikkiriman
+  * 32 kpl 3 mm diffusoitu LED
+  * 1 kpl  10 µF SMD tantaalikondensaattori
+  * Kuusi pinnisen piikkiriman ohjelmointia varten.
+
+  **Riippuen LEDien väristä:**
+  * Siniset/valkoiset/vihreät:   4 kpl 110 Ohm 1206/1210 SMD-vastus
+  * Punaiset/keltaiset:          4 kpl 150 Ohm...
   
-  lisäksi tarvitset:
-  * kaksinapaista johtoa paristoliittimelle
+  **lisäksi tarvitset:**
   * kuumaliimaa
+  * USB kaapelin
+  * Extra vastuksen? Selivä myöhemmin...
   * haalarimerkin :-)
+-->
+
+| **Komponetti** | **KPL** | **Huomautukset** |
+| :--- | :--- | :--- |
+| ATtiny861a SOIC | 1 |  |
+| 3 mm diffusoitu LED | 32 | |
+| 110 Ohm 1206/1210 SMD vastus | 4 | Sinisille, valkoisille, vihreille ledeille |
+| 150 Ohm 1206/1210 SMD vastus | 4 | Keltaisille, punaisille ledeille |
+| 10 µF SMD tantaalikondensaattori | 1 | |
+| 6 pinnisen piikkirima | - | Ohjelmointia varten |
+| Kuumaliimaa | - | Ledien suojaamiseen |
+| USB kaapeli | - | Sopivan pituinen, vaikka 1 m |
+| Haalarimerkki | 1 | :-) |
+
+<!---
+| **Komponetti** | **KPL** | **Huomautukset** |
+| :--- | :--- | :--- |
+| ATtiny861a SOIC | 1 | S/SU |
+| 3 mm diffusoitu LED | 32 | |
+| 10 µF SMD tantaalikondensaattori | 1 | |
+
+| **Vastuksets** | **KPL** | **Huomautukset** |
+ :--- | :--- | :--- |
+| 110 Ohm 1206/1210 SMD vastus | 4 | Sinisille, valkoisille, vihreille ledeille |
+| 150 Ohm 1206/1210 SMD vastus | 4 | Keltaisille, punaisille ledeille |
+| | | | 
+
+| **Lisäksi tarvitset** | |
+ :--- | :--- |
+| 6 pinnisen piikkirima | ohjelmointia varten |
+| Kuumaliimaa | Ledien suojaamiseen |
+| USB kaapelin | Sopivan pituinen |
+| Haalarimerkin  | :-) |
+--->
   
-### Piirikaavio
+## Pirilevyt 
+| [SIK](kicad/possu) | OTiT | [YRK](kicad/ymp) | [PROSE](kicad/prose) | [KONE](kicad/kone) | [ARK](kicad/ark) | [OPTIEM](kicad/optiem) |
+| :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
+|  <img src="kicad/kuvat/possu_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/otit_komp.svg" alt="alt" width="180">  | <img src="kicad/kuvat/yrk_komp.svg" alt="alt" width="300">  | <img src="kicad/kuvat/prose_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/ark_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/optiem_komp.svg" alt="alt" width="200"> <tr></tr>
+| <img src="kicad/kuvat/possu_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/otit_led.svg" alt="alt" width="180"> | <img src="kicad/kuvat/yrk_led.svg" alt="alt" width="300"> | <img src="kicad/kuvat/prose_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_led.svg" alt="alt" width="200"> |  <img src="kicad/kuvat/ark_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/optiem_led.svg" alt="alt" width="200">
+<!---| <img src="kicad/kuvat/possu_läpi.svg" alt="alt" width="200">  |   |   |   | | | <tr></tr> --->
 
-1. Läpiviennit
-  Kaksipuoleisessa levyssä läpiviennit kuljettavat sähkön levyn puolelta toiselle.
 
-  Mikäli olet saanut levyn yliopiston piirilevypajalta, siinä on luultavasti läpiviennit ja voit ohittaa tämän vaiheen.
-  Jos piirilevy on syövytetty elektroniikkakerhon piirilevypajalla siinä ei ole läpivientejä ja ne täytyy juottaa itse.
-  Juota siis johdon pätkä kuvassa oleviin reikiin molemmilta puolilta ja katkaise lopuksi mahdollisimman matalaksi.
+## Ohjeet piirilevyn tekoon
+<details>
+<summary><b>Näytä </b></summary>
+Tee vaikka syövyttämällä tai jyrsimällä :D
+</details>
 
-  Levyn takapuoli. Tältä puolelta näkee mihin juotetaan läpiviennit.
+## Ohjeet kokoonpanoon
+<!--<details>
+<summary><b>Näytä</b></summary>
+-->
 
-  ![back copper](kicad/kuvat/bcu.svg)
+**Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.**
 
-2. Vastukset
-  Levylle tulee neljä kappaletta 110 ohm vastuksia. Vastukset on merkattu kuviin tunnisteilla R1,R2,R3,R4.
+1. Piirilevyyn juotetaan 4 SMD vastusta ja 1 SMD kondensaattori.
+   Helpointen ja nätein tapa juottaa ne on laittamalla yhteen pädiin vähän tinaa ja sitten varovasti työntämällä komponetti sulaa tinaa, niin ettei se jää "ilmaan".
+   Toinen puoli on helpompi juottaa kun se nyt pysyy siinä paikallaan.
 
-  Pintaliitosvastus on helpoin juottaa siten, että juottaa vähän tinaa ensin piirilevyn toiselle pädille ja sitten vastus    siirretään oikealle paikalle, pidetään paikallaan painamalla jollain lämpöä kestävällä työkalulla ja painetaan kolvilla kunnes tina sulaa. Sitten voit juottaa toisen pädin normaalisti.
-  
-  Piirilevyn komponenttipuoli
+   Vastuksilla ei ole väliä kummin päin ne on laitettu, kuhan numero puoli on ylöspäin ja suhteellisen suoraan laitettu, se on hyvä.
+   Kondensaattorin suunta pitää kattoa piirikaaviosta.
+   #
+ 
+2. Piirin juottaminen onnistuu helpointen siten, että juotat ensin yhden kulman kiinni. Sulata juotos, jos piiri on vinossa.
+   Tarkista, että piirin kaikki jalat ovat pädien päällä. Ei ilmassa.
+   Juota sitten toinen vastakkainen kulma.
 
-  ![pcb](kicad/kuvat/fcu_silk.svg)
-  ![front copper](kicad/kuvat/fcu.svg)
-  ![silkki](kicad/kuvat/silk.svg)
-  
-  ##### Otit
-  
-   ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)
-   ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg)
-  
-  TODO: tähän vois panna kuvan kasatusta levystä
-  
-3. Regulaattori
-   Regulaattori kannattaa juottaa ensin, koska se on ahtaassa kolossa. Regulaattorin juottamisessa täytyy myös olla huolellinen, ettei synny oikosulkuja.
+   Loput jalat voi juottaa yksi kerrallaan.
+   Tai jos haluaa kokeilla nopeammalla tavalla niin veto juottamalla saa yhden puolen yhdehllä vedolla*. [Esimerkki video...](https://www.youtube.com/results?search_query=drag+soldering)
+   #
+3. 6-pinninen piikkirima on ohjelmointia varten, juottaminen onnistuu samalla tavalla kuin vastukset.
+   #
+4. USB kaapelista pitää leikata toinen pää pois.
+Kuori 5v and GND johdot joko saksilla tai kuorimilla.
+Juota sitten 5V ja GND piirilevyyn.
+
+   Tähän kannattaa käyttää USB kaapelia jossa on vain 5V ja GND tai semmosta kaapelia jossa on paksut sisäiset johtimet.
+
+   #
+6. Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi. Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
+
+   Pidä mielessä: + = pyöreä läpiveto, pidempi jalka ledissä. - = neliö läpiveto, lyhyempi jalka.
+
+   Ledien jalkojen päät kannattaa katkoa kulmassa, näin niistä tulee teräviä. Helpottaa ledien painamista merkistä läpi.
+   Toinen kikka on myös paksummalla neulalla tehä reikiä etukäteen.
+
+   Jos jostakin syystä, olet juottanut kaikki ledin väärin päin. Erinomaista, nyt ledit ei toimi.
+   Onneksi on olemassa koodin pätkä joka vaihtaa virran suunnan.
+   #
+8. Hyppää kohtaan "Ohjelmointi"
+   #
+9. Sitten kun ohjelmisto on flashatty ja tarkistettu, että kaikki ledit toimiii niinkuin pitäisi, piikkirima otetaan pois. Joko imusukkaa / tinapumppua käyttäen tai sitten lämmittämällä tinaa kolvilla, tekemällä veto liikkeitä.
+    #
+10. Tässä kohtaan on hyvä kokeilla laittaa merkki powerbankkiin kiinni. Jos merkki sammuu itsestään, se voi hyvinkin johtua siitä, että merkki on liian energiatehokas :D
+    Esim. SIK:in possu merkki syöpi n. 5-20 ma riippuen ledien tilasta.
+
+    Tämän ongelman saa korjattua juottamalla ylimääräisen vastuksen 5V ja GND väliin.
+    Esim. Juottamalla 110 ohmin vastuksen, merkki syö ~60 ma.
+    Vastuksen suuruus riippuu powerbankistä. Joissakin on joko suurempi tai pienempi minimi virta vaatimus. 
+    #
+12. Lopuksi, laita kuumaliimaa ledien ympärille suojausta varten.
+   Ei ole pakko jos et halua.
+
+</details>
+
+
+## Ohjelmointi
+
+<!--<details>
+<summary><b>Näytä</b></summary> -->
+
+1. Ensiksi Arduinoon pitää puskea ISP kooodit.
+
+    ```
+    File > Examples > 11.ArduinoISP
+    ```
+    Verifoi ja uploadaa sketch.
+
+    # 
+2.  Merkin ohjelmointiliittimen pinnit keskeltä reunalle:
+
+    ```
+    Nro:  Nimi:   Arduinon pinni (nano):
+    
+    6:    Reset   10
+    5:    GND     GND
+    4:    VCC     VCC
+    3:    SCK     13
+    2:    MISO    12
+    1:    MOSI    11
+    
+    Muista vetää arduinon Reset ylös. Ardu nollautuu kun sarjaliikenne alotetaan....
+    ```
+    
+    #
+3. Src hakemistosta löytyy tiedostot lediportit_oikein.h ja lediportit_väärin.h joista jompikumpi ylikirjoitetaan lediportit.h tiedostoon jos ledit on juotettu väärin päin.
+
+   Vaihtoehtoisesti voi käyttää valmiiksi käännettyjä koodeja pre_compiled hakemistosta.
+   Jolloin seuraavassa kohdassa käytetään "a.out" sijaan joko "oikein.out" tai "vaarin.out".
+   #
+4. Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
+
+   #####  Unix-like
    
-4. Mikrokontrolleri
-Mikrokontrollerissa polariteetti on merkitty lovella kuvassa ja lovella tai pisteellä itse komponentissa.
+   ```
+   // kääntäminen
+   avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL  
+   
+   // Fläsäys käyttäen arduino-isp:tä
+   avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U flash:w:a.out
+   
+   // Fuse asetukset käyttäen arduino-isp:tä
+   avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
+   ```
+   ##### Windows
+   
+   ```
+   // kääntäminen
+   avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL
+   
+   // Fläsäys käyttäen arduino-isp:tä
+   avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U flash:w:a.out
+   
+   // Fuse asetukset käyttäen arduino-isp:tä
+   avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
+   ```
+   Windowsilla avrdude pitää olla ympäristömuuttujissa. Toinen vaihtoehto on ajaa komento "\Arduino\hardware\tools\avr\bin"-kansiossa.
 
-5. Kondensaattorit
-  Tantaalikondensaattorissa polariteetti on merkitty viivalla joka tarkoitta positiivista puolta. Piirilevylle on piirretty paikat neljälle konkalle, kytke kuitenkin vain kaksi C3 ja C4.
-  
-6. Ohjelmointiliitin
-  Juota pätkä piikkirimaa vaakatasoon. Liitin on kuvassa merkitty P1 ja siihen tulee kuusi pinniä.
-  TODO: Kuva aiheesta selventäisi..
-
-7. Kytkin
-  Tällä hetkellä kytkimelle ei ole ohjelmoitu toiminnallisuutta, mutta sen juottaminen on niin pieni vaiva että se kannattanee kuitenkin tehdä. Kytkin siis asennetaan ylösalaisin niin että kytkimen hattu on levyn tasolla. Tarkoitus on siis että haalarimerkin läpi sitä olisi helppo painaa, mutta kuitenkin sitä ei tulisi vahingossa painettua.
-  TODO: Lissää kuvia..
-  
-8. Ledit
-  Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi.
-  Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
-  
-  Elektroniikkakerholla on hankittu yleensä mahdollisimman edullisia ledejä joten voisi olla hyvä ennen juottamista testata ledit virtalähteellä. 
-  
-  Ledien jalat täytyy teroittaa leikkaamalla ne sivuleikkurilla mahdollisimman viistosti, niin että niistä tulee mahdollisimman terävät merkin läpi painamista varten. Leikkaa myös jalat reilusti eri mittaisiksi. Ne on helpompi painaa lapi yksi kerrallaan pihdeillä.
-  
-  Salaman ylä ja alapäässä on kaksi lediä piirretty niin lähellä toisiaan, että ledejä olisi hyvä vähän viilata jotta ne saa osoittamaan suoraan. (Aikaisemmassa leiskassa ledeillä oli tarpeeksi etäisyyttä mutta ne eivät pysyneet linjassa niin piirsin näin :-) )
-  
-  TODO: KUVA!!!
-  
-  Haalarimerkki kannattaa tässä vaiheessa kiinnittää ylimmän ja alimman ledin reistä johtimella kiinni oikealle kohdalle, helpottaa kasaamista. Itse olen kokenut käteväksi työmenetelmäksi että painan johtimen piirilevyn puolelta läpi ja sitten lämmitän sitä merkin puolelta niin että merkkiin sulaa/palaa pieni piste, josta sitten tietää mistä kohdasta ledin jalka kannattaa painaa läpi.
-
-8. Virtajohto
-  Virtajohto kannattaa liittää viimeisenä, koska se hankaloittaa levyn käsittelyä. Mitoita virtajohdon pituus niin, että se riittää taskuun missä aiot paristoa säilyttää paikasta johon merkin aiot ommella.
-Johdon toiseen päähän juotetaan 9v-paristolle paristoliitin. Elekerholla on ollut huonoja paristoliittimiä joiden johdot ovat katkeilleet herkästi, joten liitin kannattaa ehkä purkaa, poistaa alkuperäiset johdot ja juottaa uusi johto tilalle. Paristoliitin suojataan kuumaliimalla.
-
-  Kiinnitä huomiota polariteettiin. Salamaan ei ole suunniteltu suojaa väärinpäinkytkemisen varalta ja regulaattori palaa välittömästi kun näin tapahtuu. (Suojadiodin lisääminen olisi aika triviaalia) 
-  TODO: Tähänki vois panna kuvan!
-
-9. Ohjelmointi
-  Ohjelmointiin on ohjeet jäljempänä.
-  
-10. Lopuksi kun on varmistettu että levy toimii oikein se kannattaa suojata kuumaliimalla niin että ledien terävät jalat peittyvät. Kytkin ja virtajohto kannattaa myös varmistaa hyvin. Merkkiä on vaikea korjata, kun se on kiinni haalareissa.
-
-Todo: Syövytystä varten maskit. Sik maski saattaa löytyä vielä jostain. Otitille ei ole tehty vaan levyt jyrsittiin.
-
-## Ohjelma
-
-Ohjelma siirtyy levylle kätevästi käyttäen arduinoa ohjelmointilaitteena.
-
-```
-Salaman ohjelmointiliittimen pinnit keskeltä reunalle:
-
-Nro:  Nimi:   Arduinon pinni (nano):
-
-6:    Reset   10
-5:    GND     GND
-4:    VCC     VCC
-3:    SCK     13
-2:    MISO    12
-1:    MOSI    11
-
-Muista vetää arduinon Reset ylös. Ardu nollautuu kun sarjaliikenne alotetaan....
-```
-
-Src hakemistossa on lediportit_oikein.h ja lediportit_väärin.h tiedostot joista jompikumpi kopioidaan lediportit.h tiedoston päälle mikäli ledit on juotettu vastoin ohjetta. (TODO: nimet ovat ehkä väärin)
-
-Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
-
-##### Linux ja Mac
-
-```
-// kääntäminen
-avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL  
-
-// Fläsäys käyttäen arduino-isp:tä
-avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U flash:w:a.out
-
-// Fuse asetukset käyttäen arduino-isp:tä
-avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
-```
-##### Windows
-
-```
-// kääntäminen
-avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL
-
-// Fläsäys käyttäen arduino-isp:tä
-avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U flash:w:a.out
-
-// Fuse asetukset käyttäen arduino-isp:tä
-avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
-```
-Windowsilla avrdude pitää olla ympäristömuuttujissa. Toinen vaihtoehto on ajaa komento "\Arduino\hardware\tools\avr\bin"-kansiossa.
+<!--</details> -->
