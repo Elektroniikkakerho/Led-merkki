@@ -4,8 +4,11 @@ Sikin led salamaan ja Otitin led merkkiin koodi, piirilevy ja ohjeet
 ## Piirilevyt
 ### Mistä salama koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
+
 Ledejä on 32 (multiplexattu 4x8kpl), ja kytketty yhdellä vastuksella per rivi.
+
 Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai toimittaa muuta toiminnallisuutta, mutta näitä ei ole koodissa toteutettu vielä.
+
 Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm mikrokontrollerille.
 
 ![skema](kicad/kuvat/skema.svg "Skema on jotakuinkin tällainen")
@@ -23,7 +26,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   * USB kaapelin
   * haalarimerkin :-)
   
-### Piirikaavio
+## Piirikaavio
 
 1. Läpiviennit
   Kaksipuoleisessa levyssä läpiviennit kuljettavat sähkön levyn puolelta toiselle.
