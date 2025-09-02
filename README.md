@@ -4,9 +4,7 @@ Sikin led salamaan ja Otitin led merkkiin koodi, piirilevy ja ohjeet
 ## Piirilevyt
 ### Mistä salama koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
-Ledejä on 32 ja niille on 110 ohm etuvastukset.
-Salamassa on myös 5v regulaattori joka pienentää 9v paristosta saatavan jännitteen viiteen volttiin.
-Regulaattori vaatii toimiakseen kondensaattorit molemmille puolilleen.
+Ledejä on 32 (multiplexattu 4x8kpl), ja kytketty yhdellä vastuksella per rivi.
 Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai toimittaa muuta toiminnallisuutta, mutta näitä ei ole koodissa toteutettu vielä.
 Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm mikrokontrollerille.
 
