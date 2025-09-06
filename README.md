@@ -1,5 +1,5 @@
-# Salama
-Sikin led salamaan ja Otitin led merkkiin koodi, piirilevy ja ohjeet
+# LED-MERKKI
+Sikin led salamaan ja muitten kiltojen led merkkiin koodi, piirilevy ja ohjeet.
 
 ## Piirilevyt
 ### Mistä salama koostuu ja miten se toimii
@@ -102,7 +102,7 @@ Johdon toiseen päähän juotetaan 9v-paristolle paristoliitin. Elekerholla on o
 
 Todo: Syövytystä varten maskit. Sik maski saattaa löytyä vielä jostain. Otitille ei ole tehty vaan levyt jyrsittiin.
 
-## Ohjelma
+## Ohjelman flashays
 
 Ohjelma siirtyy levylle kätevästi käyttäen arduinoa ohjelmointilaitteena.
 
@@ -121,7 +121,7 @@ Nro:  Nimi:   Arduinon pinni (nano):
 Muista vetää arduinon Reset ylös. Ardu nollautuu kun sarjaliikenne alotetaan....
 ```
 
-Src hakemistossa on lediportit_oikein.h ja lediportit_väärin.h tiedostot joista jompikumpi kopioidaan lediportit.h tiedoston päälle mikäli ledit on juotettu vastoin ohjetta. (TODO: nimet ovat ehkä väärin)
+Src hakemistosta löytyy tiedostot lediportit_oikein.h ja lediportit_väärin.h joista jompikumpi ylikirjoitetaan lediportit.h tiedostoon jos ledit on juotettu väärin päin.
 
 Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
 
