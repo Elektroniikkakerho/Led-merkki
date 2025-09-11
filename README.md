@@ -1,5 +1,6 @@
 # LED-MERKKI
-![alt](kuvia/salama.jpg)
+<img src="kuvia/salama.jpg" alt="alt" width="50%" height="50%">
+
 
 ### Mistä koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
