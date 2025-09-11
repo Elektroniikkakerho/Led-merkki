@@ -94,7 +94,8 @@ Johdon toiseen päähän juotetaan 9v-paristolle paristoliitin. Elekerholla on o
 
 Todo: Syövytystä varten maskit. Sik maski saattaa löytyä vielä jostain. Otitille ei ole tehty vaan levyt jyrsittiin.
 
-## Ohjelman flashays
+<details>
+<summary><b>Ohjelman flashays</b></summary>
 
 Ohjelma siirtyy levylle kätevästi käyttäen arduinoa ohjelmointilaitteena.
 
@@ -142,3 +143,5 @@ avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" 
 avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
 ```
 Windowsilla avrdude pitää olla ympäristömuuttujissa. Toinen vaihtoehto on ajaa komento "\Arduino\hardware\tools\avr\bin"-kansiossa.
+
+</details>
