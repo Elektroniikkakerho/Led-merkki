@@ -95,6 +95,20 @@ Johdon toiseen päähän juotetaan 9v-paristolle paristoliitin. Elekerholla on o
 Todo: Syövytystä varten maskit. Sik maski saattaa löytyä vielä jostain. Otitille ei ole tehty vaan levyt jyrsittiin.
 
 <details>
+<summary><b>Ohjeet piirilevyn tekoon </b></summary>
+Jotain hyvää konstaa
+</details>
+
+---
+
+<details>
+<summary><b>Ohjeet kokoonpanoon</b></summary>
+Jotain hyvää konstaa
+</details>
+
+---
+
+<details>
 <summary><b>Ohjelman flashays</b></summary>
 
 Ohjelma siirtyy levylle kätevästi käyttäen arduinoa ohjelmointilaitteena.
