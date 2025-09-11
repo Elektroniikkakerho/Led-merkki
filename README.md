@@ -1,8 +1,7 @@
 # LED-MERKKI
-Sikin led salamaan ja muitten kiltojen led merkkiin koodi, piirilevy ja ohjeet.
+Sikin led salamaan ja muitten kiltojen led merkkiin koodi, piirilevyt ja ohjeet.
 
-## Piirilevyt
-### Mistä salama koostuu ja miten se toimii
+### Mistä koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
 
 Ledejä on 32 (multiplexattu 4x8kpl), ja kytketty yhdellä vastuksella per rivi.
@@ -26,25 +25,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   * USB kaapelin
   * haalarimerkin :-)
   
-## Piirikaavio
-
-1. Läpiviennit
-  Kaksipuoleisessa levyssä läpiviennit kuljettavat sähkön levyn puolelta toiselle.
-
-  Mikäli olet saanut levyn yliopiston piirilevypajalta, siinä on luultavasti läpiviennit ja voit ohittaa tämän vaiheen.
-  Jos piirilevy on syövytetty elektroniikkakerhon piirilevypajalla siinä ei ole läpivientejä ja ne täytyy juottaa itse.
-  Juota siis johdon pätkä kuvassa oleviin reikiin molemmilta puolilta ja katkaise lopuksi mahdollisimman matalaksi.
-
-  Levyn takapuoli. Tältä puolelta näkee mihin juotetaan läpiviennit.
-
-  ![back copper](kicad/kuvat/bcu.svg)
-
-2. Vastukset
-  Levylle tulee neljä kappaletta 110 ohm vastuksia. Vastukset on merkattu kuviin tunnisteilla R1,R2,R3,R4.
-
-  Pintaliitosvastus on helpoin juottaa siten, että juottaa vähän tinaa ensin piirilevyn toiselle pädille ja sitten vastus    siirretään oikealle paikalle, pidetään paikallaan painamalla jollain lämpöä kestävällä työkalulla ja painetaan kolvilla kunnes tina sulaa. Sitten voit juottaa toisen pädin normaalisti.
-  
-  Piirilevyn komponenttipuoli
+## Pirilevyt 
 | SIK | OTiT | YRK | PROSE | KONE | ARK | OPTIEM |
 | :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
 |  ![pcb](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  | | |
