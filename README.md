@@ -45,11 +45,11 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   Pintaliitosvastus on helpoin juottaa siten, että juottaa vähän tinaa ensin piirilevyn toiselle pädille ja sitten vastus    siirretään oikealle paikalle, pidetään paikallaan painamalla jollain lämpöä kestävällä työkalulla ja painetaan kolvilla kunnes tina sulaa. Sitten voit juottaa toisen pädin normaalisti.
   
   Piirilevyn komponenttipuoli
-| SIK | OTiT | YRK | PROSE |
-| :---: | :---: | :---: | :---: |
-|  ![pcb](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  |
-| ![front copper](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  |
-| ![silkki](kicad/kuvat/silk.svg) | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | 
+| SIK | OTiT | YRK | PROSE | KONE | ARK | OPTIEM |
+| :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
+|  ![pcb](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  | | |
+| ![front copper](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  | | |
+| ![silkki](kicad/kuvat/silk.svg) | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | | |
 
   
 3. Mikrokontrolleri
