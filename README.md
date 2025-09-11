@@ -103,7 +103,30 @@ Jotain hyvää konstaa
 
 <details>
 <summary><b>Ohjeet kokoonpanoon</b></summary>
-Jotain hyvää konstaa
+
+
+Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
+
+1. Piirilevyyn juotetaan 4 SMD vastusta ja 1 SMD kondensaattori.
+   Helpointen ja nätein tapa juottaa ne on laittamalla yhteen pädiin vähän tinaa ja sitten varovasti työntämällä komponetti sulaa tinaa, niin ettei se jää "ilmaan".
+   Toinen puoli on helpompi juottaa kun se nyt pysyy siinä paikallaan.
+
+   Vastuksilla ei ole väliä kummin päin ne on laitettu, kuhan numero puoli on ylöspäin ja suhteellisen suoraan laitettu, se on hyvä.
+   Kondensaattorin suunta pitää kattoa piirikaaviosta.
+
+2. Piirin juottaminen onnistuu helpointen siten, että juotat ensin yhden kulman kiinni. Sulata juotos, jos piiri on vinossa.
+   Tarkista, että piirin kaikki jalat ovat pädien päällä. Ei ilmassa.
+   Juota sitten toinen vastakkainen kulma.
+
+   Loput jalat voi juottaa yksi kerrallaan.
+   Tai jos haluaa kokeilla nopeammalla tavalla niin veto juottamalla saa yhden puolen yhdehllä vedolla*. [Esimerkki video...](https://www.youtube.com/results?search_query=drag+soldering)
+   
+3. 6-pinninen piikkirima on ohjelmointia varten,
+
+4. USB
+
+5. led
+
 </details>
 
 ---
