@@ -45,36 +45,28 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   Pintaliitosvastus on helpoin juottaa siten, että juottaa vähän tinaa ensin piirilevyn toiselle pädille ja sitten vastus    siirretään oikealle paikalle, pidetään paikallaan painamalla jollain lämpöä kestävällä työkalulla ja painetaan kolvilla kunnes tina sulaa. Sitten voit juottaa toisen pädin normaalisti.
   
   Piirilevyn komponenttipuoli
+| SIK | OTiT | YRK | PROSE |
+| :---: | :---: | :---: | :---: |
+|  ![pcb](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  |
+| ![front copper](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  |
+| ![silkki](kicad/kuvat/silk.svg) | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | 
 
-  ![pcb](kicad/kuvat/fcu_silk.svg)
-  ![front copper](kicad/kuvat/fcu.svg)
-  ![silkki](kicad/kuvat/silk.svg)
   
-  ##### Otit
-  
-   ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)
-   ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg)
-  
-  TODO: tähän vois panna kuvan kasatusta levystä
-  
-3. Regulaattori
-   Regulaattori kannattaa juottaa ensin, koska se on ahtaassa kolossa. Regulaattorin juottamisessa täytyy myös olla huolellinen, ettei synny oikosulkuja.
-   
-4. Mikrokontrolleri
+3. Mikrokontrolleri
 Mikrokontrollerissa polariteetti on merkitty lovella kuvassa ja lovella tai pisteellä itse komponentissa.
 
-5. Kondensaattorit
+4. Kondensaattorit
   Tantaalikondensaattorissa polariteetti on merkitty viivalla joka tarkoitta positiivista puolta. Piirilevylle on piirretty paikat neljälle konkalle, kytke kuitenkin vain kaksi C3 ja C4.
   
-6. Ohjelmointiliitin
+5. Ohjelmointiliitin
   Juota pätkä piikkirimaa vaakatasoon. Liitin on kuvassa merkitty P1 ja siihen tulee kuusi pinniä.
   TODO: Kuva aiheesta selventäisi..
 
-7. Kytkin
+6. Kytkin
   Tällä hetkellä kytkimelle ei ole ohjelmoitu toiminnallisuutta, mutta sen juottaminen on niin pieni vaiva että se kannattanee kuitenkin tehdä. Kytkin siis asennetaan ylösalaisin niin että kytkimen hattu on levyn tasolla. Tarkoitus on siis että haalarimerkin läpi sitä olisi helppo painaa, mutta kuitenkin sitä ei tulisi vahingossa painettua.
   TODO: Lissää kuvia..
   
-8. Ledit
+7. Ledit
   Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi.
   Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
   
@@ -88,17 +80,17 @@ Mikrokontrollerissa polariteetti on merkitty lovella kuvassa ja lovella tai pist
   
   Haalarimerkki kannattaa tässä vaiheessa kiinnittää ylimmän ja alimman ledin reistä johtimella kiinni oikealle kohdalle, helpottaa kasaamista. Itse olen kokenut käteväksi työmenetelmäksi että painan johtimen piirilevyn puolelta läpi ja sitten lämmitän sitä merkin puolelta niin että merkkiin sulaa/palaa pieni piste, josta sitten tietää mistä kohdasta ledin jalka kannattaa painaa läpi.
 
-8. Virtajohto
+7. Virtajohto
   Virtajohto kannattaa liittää viimeisenä, koska se hankaloittaa levyn käsittelyä. Mitoita virtajohdon pituus niin, että se riittää taskuun missä aiot paristoa säilyttää paikasta johon merkin aiot ommella.
 Johdon toiseen päähän juotetaan 9v-paristolle paristoliitin. Elekerholla on ollut huonoja paristoliittimiä joiden johdot ovat katkeilleet herkästi, joten liitin kannattaa ehkä purkaa, poistaa alkuperäiset johdot ja juottaa uusi johto tilalle. Paristoliitin suojataan kuumaliimalla.
 
   Kiinnitä huomiota polariteettiin. Salamaan ei ole suunniteltu suojaa väärinpäinkytkemisen varalta ja regulaattori palaa välittömästi kun näin tapahtuu. (Suojadiodin lisääminen olisi aika triviaalia) 
   TODO: Tähänki vois panna kuvan!
 
-9. Ohjelmointi
+8. Ohjelmointi
   Ohjelmointiin on ohjeet jäljempänä.
   
-10. Lopuksi kun on varmistettu että levy toimii oikein se kannattaa suojata kuumaliimalla niin että ledien terävät jalat peittyvät. Kytkin ja virtajohto kannattaa myös varmistaa hyvin. Merkkiä on vaikea korjata, kun se on kiinni haalareissa.
+9. Lopuksi kun on varmistettu että levy toimii oikein se kannattaa suojata kuumaliimalla niin että ledien terävät jalat peittyvät. Kytkin ja virtajohto kannattaa myös varmistaa hyvin. Merkkiä on vaikea korjata, kun se on kiinni haalareissa.
 
 Todo: Syövytystä varten maskit. Sik maski saattaa löytyä vielä jostain. Otitille ei ole tehty vaan levyt jyrsittiin.
 
