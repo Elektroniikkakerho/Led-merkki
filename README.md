@@ -11,6 +11,7 @@ Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai to
 
 Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm mikrokontrollerille.
 
+## Skeema
 ![skema](kicad/kuvat/skema.svg "Skema on jotakuinkin tällainen")
 
 ## Osaluettelo
@@ -33,58 +34,15 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 | ![front copper](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  | | |
 | ![silkki](kicad/kuvat/silk.svg) | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | | |
 
-  
-3. Mikrokontrolleri
-Mikrokontrollerissa polariteetti on merkitty lovella kuvassa ja lovella tai pisteellä itse komponentissa.
-
-4. Kondensaattorit
-  Tantaalikondensaattorissa polariteetti on merkitty viivalla joka tarkoitta positiivista puolta. Piirilevylle on piirretty paikat neljälle konkalle, kytke kuitenkin vain kaksi C3 ja C4.
-  
-5. Ohjelmointiliitin
-  Juota pätkä piikkirimaa vaakatasoon. Liitin on kuvassa merkitty P1 ja siihen tulee kuusi pinniä.
-  TODO: Kuva aiheesta selventäisi..
-
-6. Kytkin
-  Tällä hetkellä kytkimelle ei ole ohjelmoitu toiminnallisuutta, mutta sen juottaminen on niin pieni vaiva että se kannattanee kuitenkin tehdä. Kytkin siis asennetaan ylösalaisin niin että kytkimen hattu on levyn tasolla. Tarkoitus on siis että haalarimerkin läpi sitä olisi helppo painaa, mutta kuitenkin sitä ei tulisi vahingossa painettua.
-  TODO: Lissää kuvia..
-  
-7. Ledit
-  Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi.
-  Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
-  
-  Elektroniikkakerholla on hankittu yleensä mahdollisimman edullisia ledejä joten voisi olla hyvä ennen juottamista testata ledit virtalähteellä. 
-  
-  Ledien jalat täytyy teroittaa leikkaamalla ne sivuleikkurilla mahdollisimman viistosti, niin että niistä tulee mahdollisimman terävät merkin läpi painamista varten. Leikkaa myös jalat reilusti eri mittaisiksi. Ne on helpompi painaa lapi yksi kerrallaan pihdeillä.
-  
-  Salaman ylä ja alapäässä on kaksi lediä piirretty niin lähellä toisiaan, että ledejä olisi hyvä vähän viilata jotta ne saa osoittamaan suoraan. (Aikaisemmassa leiskassa ledeillä oli tarpeeksi etäisyyttä mutta ne eivät pysyneet linjassa niin piirsin näin :-) )
-  
-  TODO: KUVA!!!
-  
-  Haalarimerkki kannattaa tässä vaiheessa kiinnittää ylimmän ja alimman ledin reistä johtimella kiinni oikealle kohdalle, helpottaa kasaamista. Itse olen kokenut käteväksi työmenetelmäksi että painan johtimen piirilevyn puolelta läpi ja sitten lämmitän sitä merkin puolelta niin että merkkiin sulaa/palaa pieni piste, josta sitten tietää mistä kohdasta ledin jalka kannattaa painaa läpi.
-
-7. Virtajohto
-  Virtajohto kannattaa liittää viimeisenä, koska se hankaloittaa levyn käsittelyä. Mitoita virtajohdon pituus niin, että se riittää taskuun missä aiot paristoa säilyttää paikasta johon merkin aiot ommella.
-Johdon toiseen päähän juotetaan 9v-paristolle paristoliitin. Elekerholla on ollut huonoja paristoliittimiä joiden johdot ovat katkeilleet herkästi, joten liitin kannattaa ehkä purkaa, poistaa alkuperäiset johdot ja juottaa uusi johto tilalle. Paristoliitin suojataan kuumaliimalla.
-
-  Kiinnitä huomiota polariteettiin. Salamaan ei ole suunniteltu suojaa väärinpäinkytkemisen varalta ja regulaattori palaa välittömästi kun näin tapahtuu. (Suojadiodin lisääminen olisi aika triviaalia) 
-  TODO: Tähänki vois panna kuvan!
-
-8. Ohjelmointi
-  Ohjelmointiin on ohjeet jäljempänä.
-  
-9. Lopuksi kun on varmistettu että levy toimii oikein se kannattaa suojata kuumaliimalla niin että ledien terävät jalat peittyvät. Kytkin ja virtajohto kannattaa myös varmistaa hyvin. Merkkiä on vaikea korjata, kun se on kiinni haalareissa.
-
-Todo: Syövytystä varten maskit. Sik maski saattaa löytyä vielä jostain. Otitille ei ole tehty vaan levyt jyrsittiin.
-
+## Ohjeet piirilevyn tekoon
 <details>
-<summary><b>Ohjeet piirilevyn tekoon </b></summary>
+<summary><b>Näytä </b></summary>
 Jotain hyvää konstaa
 </details>
 
----
-
+## Ohjeet kokoonpanoon
 <details>
-<summary><b>Ohjeet kokoonpanoon</b></summary>
+<summary><b>Näytä</b></summary>
 
 
 Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
@@ -111,11 +69,11 @@ Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
 
 </details>
 
----
+
+## Ohjelman flashays
 
 <details>
-<summary><b>Ohjelman flashays</b></summary>
-
+<summary><b>Näytä</b></summary>
 Ohjelma siirtyy levylle kätevästi käyttäen arduinoa ohjelmointilaitteena.
 
 ```
