@@ -2,7 +2,7 @@
 <img src="kuvia/salama.jpg" alt="alt" width="50%" height="50%">
 
 
-### Mistä koostuu ja miten se toimii
+## Mistä koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
 
 Ledejä on 32 (multiplexattu 4x8kpl), ja kytketty yhdellä vastuksella per rivi.
