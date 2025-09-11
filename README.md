@@ -1,5 +1,5 @@
 # LED-MERKKI
-Sikin led salamaan ja muitten kiltojen led merkkiin koodi, piirilevyt ja ohjeet.
+![alt](kuvia/salama.jpg)
 
 ### Mistä koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
