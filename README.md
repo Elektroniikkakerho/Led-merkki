@@ -66,15 +66,15 @@ Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
 4. USB kaapelista pitää leikata toinen pää pois.
 Kuori 5v and GND johdot joko saksilla tai kuorimilla.
 Juota sitten 5V ja GND piirilevyyn.
-Tähän kannattaa käyttää USB kaapelia jossa on vain 5V ja GND tai semmosta kaapelia jossa on paksut sisäiset johtimet.
+
+   Tähän kannattaa käyttää USB kaapelia jossa on vain 5V ja GND tai semmosta kaapelia jossa on paksut sisäiset johtimet.
 
 
 6. Ledit Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi. Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
 
 7. Hyppää kohtaan "Ohjelmointi"
 
-8. Sitten kun ohjelmisto on flashatty ja tarkistettu, että kaikki ledit toimiii niinkuin pitäisi,
-Piikkirima otetaan pois. Joko imusukkaa / tinapumppua käyttäen tai sitten lämmittämällä tinaa kolvilla, tekemällä veto liikkeitä.
+8. Sitten kun ohjelmisto on flashatty ja tarkistettu, että kaikki ledit toimiii niinkuin pitäisi, piikkirima otetaan pois. Joko imusukkaa / tinapumppua käyttäen tai sitten lämmittämällä tinaa kolvilla, tekemällä veto liikkeitä.
 
 9. Lopuksi, laita kuumaliimaa ledien ympärille suojausta varten.
    Ei ole pakko jos et halua.
