@@ -61,16 +61,28 @@ Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
    Loput jalat voi juottaa yksi kerrallaan.
    Tai jos haluaa kokeilla nopeammalla tavalla niin veto juottamalla saa yhden puolen yhdehllä vedolla*. [Esimerkki video...](https://www.youtube.com/results?search_query=drag+soldering)
    
-3. 6-pinninen piikkirima on ohjelmointia varten,
+3. 6-pinninen piikkirima on ohjelmointia varten, juottaminen onnistuu samalla tavalla kuin vastukset.
 
-4. USB
+4. USB kaapelista pitää leikata toinen pää pois.
+Kuori 5v and GND johdot joko saksilla tai kuorimilla.
+Juota sitten 5V ja GND piirilevyyn.
+Tähän kannattaa käyttää USB kaapelia jossa on vain 5V ja GND tai semmosta kaapelia jossa on paksut sisäiset johtimet.
 
-5. led
+
+6. Ledit Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi. Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
+
+7. Hyppää kohtaan "Ohjelmointi"
+
+8. Sitten kun ohjelmisto on flashatty ja tarkistettu, että kaikki ledit toimiii niinkuin pitäisi,
+Piikkirima otetaan pois. Joko imusukkaa / tinapumppua käyttäen tai sitten lämmittämällä tinaa kolvilla, tekemällä veto liikkeitä.
+
+9. Lopuksi, laita kuumaliimaa ledien ympärille suojausta varten.
+   Ei ole pakko jos et halua.
 
 </details>
 
 
-## Ohjelman flashays
+## Ohjelmointi
 
 <details>
 <summary><b>Näytä</b></summary>
