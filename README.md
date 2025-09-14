@@ -1,3 +1,5 @@
+# KÄYTÄ TÄTÄ HAARAA JOS TEET 9V PARISTOLLA TOIMIVAN MERKIN
+
 # Salama
 Sikin led salamaan ja Otitin led merkkiin koodi, piirilevy ja ohjeet
 
