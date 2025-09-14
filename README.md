@@ -28,7 +28,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   * haalarimerkin :-)
   
 ## Pirilevyt 
-| SIK | OTiT | YRK | PROSE | KONE | ARK | OPTIEM |
+| [SIK](kicad/possu) | OTiT | [YRK](kicad/ymp) | [PROSE](kicad/prose) | [KONE](kicad/kone) | [ARK](kicad/ark) | [OPTIEM](kicad/optiem) |
 | :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
 |  ![pcb](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  | | |
 | ![front copper](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  | | |
