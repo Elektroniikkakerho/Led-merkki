@@ -30,9 +30,9 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 ## Pirilevyt 
 | [SIK](kicad/possu) | OTiT | [YRK](kicad/ymp) | [PROSE](kicad/prose) | [KONE](kicad/kone) | [ARK](kicad/ark) | [OPTIEM](kicad/optiem) |
 | :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
-|  ![pcb](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  | | |
-| ![front copper](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  | | |
-| ![silkki](kicad/kuvat/silk.svg) | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | | |
+|  ![](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  | | |
+| ![](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  | | |
+| ![](kicad/kuvat/possu_led.svg) | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | | |
 
 ## Ohjeet piirilevyn tekoon
 <details>
