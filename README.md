@@ -32,7 +32,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 | :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
 |  ![](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | C  | D  | | |
 | ![](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  | | |
-| <img src="kicad/kuvat/possu_led.svg" alt="alt" width="50%" height="50%"> | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | <img src="kicad/kuvat/prose_led.svg" alt="alt" width="50%" height="50%"> | |
+| <img src="kicad/kuvat/possu_led.svg" alt="alt" width="50%" height="50%"> | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | | <img src="kicad/kuvat/prose_led.svg" alt="alt" width="50%" height="50%"> | <img src="kicad/kuvat/kone_led.svg" alt="alt" width="50%" height="50%"> |
 
 ## Ohjeet piirilevyn tekoon
 <details>
