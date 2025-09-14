@@ -19,7 +19,6 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   * 32 kpl sininen 3 mm diffusoitu led
   * 4 kpl  110 Ohm 1206 smd-vastus
   * 1 kpl  10 µF tantaalikondensaattori SMD
-  * 1 kpl  palautuva kytkin (halutessa)
   
   **lisäksi tarvitset:**
   * kuusi pinnisen piikkiriman ohjelmointia varten.
