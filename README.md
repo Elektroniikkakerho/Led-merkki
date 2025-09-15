@@ -27,6 +27,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   **lisäksi tarvitset:**
   * kuumaliimaa
   * USB kaapelin
+  * Extra vastuksen? Selivä myöhemmin...
   * haalarimerkin :-)
   
 ## Pirilevyt 
@@ -86,7 +87,14 @@ Juota sitten 5V ja GND piirilevyyn.
 
 9. Sitten kun ohjelmisto on flashatty ja tarkistettu, että kaikki ledit toimiii niinkuin pitäisi, piikkirima otetaan pois. Joko imusukkaa / tinapumppua käyttäen tai sitten lämmittämällä tinaa kolvilla, tekemällä veto liikkeitä.
 
-10. Lopuksi, laita kuumaliimaa ledien ympärille suojausta varten.
+10. Tässä kohtaan on hyvä kokeilla laittaa merkki powerbankkiin kiinni. Jos merkki sammuu itsestään, se voi hyvinkin johtua siitä, että merkki on liian energiatehokas :D
+    Esim. SIK:in possu merkki syöpi n. 5-20 ma riippuen ledien tilasta.
+
+    Tämän ongelman saa korjattua juottamalla ylimääräisen vastuksen 5V ja GND väliin.
+    Esim. Juottamalla 110 ohmin vastuksen, merkki syö ~60 ma.
+    Vastuksen suuruus riippuu powerbankistä. Joissakin on joko suurempi tai pienempi minimi virta vaatimus. 
+
+12. Lopuksi, laita kuumaliimaa ledien ympärille suojausta varten.
    Ei ole pakko jos et halua.
 
 </details>
