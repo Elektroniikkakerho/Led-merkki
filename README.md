@@ -17,7 +17,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 ## Osaluettelo
   * 1 kpl  ATtiny861a SOIC
   * 32 kpl sininen 3 mm diffusoitu led
-  * 4 kpl  110 Ohm 1206 smd-vastus
+  * 4 kpl  110 Ohm 1206/1210 smd-vastus
   * 1 kpl  10 µF tantaalikondensaattori SMD
   
   **lisäksi tarvitset:**
@@ -29,8 +29,8 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 ## Pirilevyt 
 | [SIK](kicad/possu) | OTiT | [YRK](kicad/ymp) | [PROSE](kicad/prose) | [KONE](kicad/kone) | [ARK](kicad/ark) | [OPTIEM](kicad/optiem) |
 | :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
-|  ![](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | <img src="kicad/kuvat/yrk_komp.svg" alt="alt" width="300">  | D  | | |
-| ![](kicad/kuvat/fcu.svg)  | 2  | 3  | 4  | | |
+|  ![](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | <img src="kicad/kuvat/yrk_komp.svg" alt="alt" width="300">  |   | | |
+| ![](kicad/kuvat/fcu.svg)  |   |   |   | | |
 | <img src="kicad/kuvat/possu_led.svg" alt="alt" width="200"> | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | <img src="kicad/kuvat/yrk_led.svg" alt="alt" width="300"> | <img src="kicad/kuvat/prose_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_led.svg" alt="alt" width="200"> |  <img src="kicad/kuvat/ark_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/optiem_led.svg" alt="alt" width="200">
 
 ## Ohjeet piirilevyn tekoon
