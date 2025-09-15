@@ -42,7 +42,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 | 6 pinnisen piikkirima | - | Ohjelmointia varten |
 | Kuumaliimaa | - | Ledien suojaamiseen |
 | USB kaapelin | - | Sopivan pituinen |
-| Haalarimerkin | - | :-) |
+| Haalarimerkin | 1 | :-) |
 
 <!---
 | **Komponetti** | **KPL** | **Huomautukset** |
