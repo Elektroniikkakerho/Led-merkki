@@ -74,6 +74,8 @@ Juota sitten 5V ja GND piirilevyyn.
 
 6. Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi. Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
 
+   Pidä mielessä: + = pyöreä läpiveto, pidempi jalka ledissä. - = neliö läpiveto, lyhyempi jalka.
+
    Ledien jalkojen päät kannattaa katkoa kulmassa, näin niistä tulee teräviä. Helpottaa ledien painamista merkistä läpi.
    Toinen kikka on myös paksummalla neulalla tehä reikiä etukäteen.
 
