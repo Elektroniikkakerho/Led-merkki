@@ -16,12 +16,18 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 
 ## Osaluettelo
   * 1 kpl  ATtiny861a SOIC
-  * 32 kpl sininen 3 mm diffusoitu led
-  * 4 kpl  110 Ohm 1206/1210 smd-vastus
-  * 1 kpl  10 µF tantaalikondensaattori SMD
+  * 32 kpl 3 mm diffusoitu LED
+  * 1 kpl  10 µF SMD tantaalikondensaattori
+  * Kuusi pinnisen piikkiriman ohjelmointia varten.
+
+  **Riippuen LEDien väristä:**
+  * Siniset:   4 kpl 110 Ohm 1206/1210 SMD-vastus
+  * Valkoiset: 4 kpl 100 Ohm 1206/1210...
+  * Punaiset: 4 kpl 130 Ohm...
+  * Keltaiset: 4 kpl 110...
+  * Vihreät: 150...
   
   **lisäksi tarvitset:**
-  * kuusi pinnisen piikkiriman ohjelmointia varten.
   * kuumaliimaa
   * USB kaapelin
   * haalarimerkin :-)
