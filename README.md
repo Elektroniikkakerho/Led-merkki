@@ -4,12 +4,12 @@
 
 ## Mistä koostuu ja miten se toimii
 Salaman mikrokontrolleri (mcu) ohjaa ledejä sytyttäen niitä yksi kerrallaan hyvin lyhyeksi aikaa.
+Ledit ovat multiplexattu (4x8 LED), ja kytketty yhdellä vastuksella per rivi.
 
-Ledejä on 32 (multiplexattu 4x8kpl), ja kytketty yhdellä vastuksella per rivi.
-
-Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai toimittaa muuta toiminnallisuutta, mutta näitä ei ole koodissa toteutettu vielä.
+Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai toimittaa muuta toiminnallisuutta, mutta näitä ei ole koodissa toteutettu vieläkään.
 
 Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm mikrokontrollerille.
+Ohjelmointi hoituu Arduinon ISP:n kautta.
 
 ## Skeema
 ![skeema](kicad/kuvat/skeema2.svg "Skema on jotakuinkin tällainen")
@@ -79,9 +79,9 @@ Tee vaikka syövyttämällä tai jyrsimällä :D
 </details>
 
 ## Ohjeet kokoonpanoon
-<details>
+<!--<details>
 <summary><b>Näytä</b></summary>
-
+-->
 
 Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
 
@@ -137,8 +137,8 @@ Juota sitten 5V ja GND piirilevyyn.
 
 ## Ohjelmointi
 
-<details>
-<summary><b>Näytä</b></summary>
+<!--<details>
+<summary><b>Näytä</b></summary> -->
 
 Ensiksi Arduinoon pitää puskea ISP kooodit.
  
@@ -191,4 +191,4 @@ avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" 
 ```
 Windowsilla avrdude pitää olla ympäristömuuttujissa. Toinen vaihtoehto on ajaa komento "\Arduino\hardware\tools\avr\bin"-kansiossa.
 
-</details>
+<!--</details> -->
