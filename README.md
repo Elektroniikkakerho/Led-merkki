@@ -41,8 +41,8 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 | 10 µF SMD tantaalikondensaattori | 1 | |
 | 6 pinnisen piikkirima | - | Ohjelmointia varten |
 | Kuumaliimaa | - | Ledien suojaamiseen |
-| USB kaapelin | - | Sopivan pituinen |
-| Haalarimerkin | 1 | :-) |
+| USB kaapeli | - | Sopivan pituinen, vaikka 1 m |
+| Haalarimerki | 1 | :-) |
 
 <!---
 | **Komponetti** | **KPL** | **Huomautukset** |
