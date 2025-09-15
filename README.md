@@ -39,7 +39,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 ## Ohjeet piirilevyn tekoon
 <details>
 <summary><b>Näytä </b></summary>
-Jotain hyvää konstaa
+Tee vaikka syövyttämällä tai jyrsimällä :D
 </details>
 
 ## Ohjeet kokoonpanoon
