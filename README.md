@@ -15,6 +15,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 ![skeema](kicad/kuvat/skeema2.svg "Skema on jotakuinkin tällainen")
 
 ## Osaluettelo
+<!--
   * 1 kpl  ATtiny861a SOIC
   * 32 kpl 3 mm diffusoitu LED
   * 1 kpl  10 µF SMD tantaalikondensaattori
@@ -29,6 +30,40 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
   * USB kaapelin
   * Extra vastuksen? Selivä myöhemmin...
   * haalarimerkin :-)
+-->
+
+| **Komponetti** | **KPL** | **Huomautukset** |
+| :--- | :--- | :--- |
+| ATtiny861a SOIC | 1 | S/SU |
+| 3 mm diffusoitu LED | 32 | |
+| 110 Ohm 1206/1210 SMD vastus | 4 | Sinisille, valkoisille, vihreille ledeille |
+| 150 Ohm 1206/1210 SMD vastus | 4 | Keltaisille, punaisille ledeille |
+| 10 µF SMD tantaalikondensaattori | 1 | |
+| 6 pinnisen piikkirima | - | Ohjelmointia varten |
+| Kuumaliimaa | - | Ledien suojaamiseen |
+| USB kaapelin | - | Sopivan pituinen |
+| Haalarimerkin | - | :-) |
+
+<!---
+| **Komponetti** | **KPL** | **Huomautukset** |
+| :--- | :--- | :--- |
+| ATtiny861a SOIC | 1 | S/SU |
+| 3 mm diffusoitu LED | 32 | |
+| 10 µF SMD tantaalikondensaattori | 1 | |
+
+| **Vastuksets** | **KPL** | **Huomautukset** |
+ :--- | :--- | :--- |
+| 110 Ohm 1206/1210 SMD vastus | 4 | Sinisille, valkoisille, vihreille ledeille |
+| 150 Ohm 1206/1210 SMD vastus | 4 | Keltaisille, punaisille ledeille |
+| | | | 
+
+| **Lisäksi tarvitset** | |
+ :--- | :--- |
+| 6 pinnisen piikkirima | ohjelmointia varten |
+| Kuumaliimaa | Ledien suojaamiseen |
+| USB kaapelin | Sopivan pituinen |
+| Haalarimerkin  | :-) |
+--->
   
 ## Pirilevyt 
 | [SIK](kicad/possu) | OTiT | [YRK](kicad/ymp) | [PROSE](kicad/prose) | [KONE](kicad/kone) | [ARK](kicad/ark) | [OPTIEM](kicad/optiem) |
