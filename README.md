@@ -96,7 +96,12 @@ Juota sitten 5V ja GND piirilevyyn.
 
 <details>
 <summary><b>Näytä</b></summary>
-Ohjelma siirtyy levylle kätevästi käyttäen arduinoa ohjelmointilaitteena.
+
+Ensiksi Arduinoon pitää puskea ISP kooodit.
+ 
+File > Examples > 11.ArduinoISP
+
+Verifoi ja uploadaa sketch.
 
 ```
 Salaman ohjelmointiliittimen pinnit keskeltä reunalle:
