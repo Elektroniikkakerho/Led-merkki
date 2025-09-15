@@ -12,7 +12,7 @@ Levyyn on myös suunniteltu kytkin, jolla voisi vaikka sammuttaa laitteen tai to
 Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm mikrokontrollerille.
 
 ## Skeema
-![skeema](kicad/kuvat/skeema.svg "Skema on jotakuinkin tällainen")
+![skeema](kicad/kuvat/skeema2.svg "Skema on jotakuinkin tällainen")
 
 ## Osaluettelo
   * 1 kpl  ATtiny861a SOIC
