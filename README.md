@@ -29,7 +29,7 @@ Kuusipinninen liitin on ohjelmointia varten ja sitä kautta ohjelma siirretääm
 ## Pirilevyt 
 | [SIK](kicad/possu) | OTiT | [YRK](kicad/ymp) | [PROSE](kicad/prose) | [KONE](kicad/kone) | [ARK](kicad/ark) | [OPTIEM](kicad/optiem) |
 | :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
-|  ![](kicad/kuvat/fcu_silk.svg) | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | <img src="kicad/kuvat/yrk_komp.svg" alt="alt" width="300">  | <img src="kicad/kuvat/prose_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/ark_komp.svg" alt="alt" width="200"> |
+|  <img src="kicad/kuvat/possu_komp.svg" alt="alt" width="200"> | ![pcb_otit](kicad/kuvat/otit-B_Cu.svg)  | <img src="kicad/kuvat/yrk_komp.svg" alt="alt" width="300">  | <img src="kicad/kuvat/prose_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/ark_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/optiem_komp.svg" alt="alt" width="200">
 | ![](kicad/kuvat/fcu.svg)  |   |   |   | | |
 | <img src="kicad/kuvat/possu_led.svg" alt="alt" width="200"> | ![silkki_otit](kicad/kuvat/otit-B_SilkS.svg) | <img src="kicad/kuvat/yrk_led.svg" alt="alt" width="300"> | <img src="kicad/kuvat/prose_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_led.svg" alt="alt" width="200"> |  <img src="kicad/kuvat/ark_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/optiem_led.svg" alt="alt" width="200">
 
