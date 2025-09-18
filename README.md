@@ -1,5 +1,5 @@
 # LED-MERKKI
-<img src="kuvia/salama.jpg" alt="alt" width="50%" height="50%">
+<img src="kuvia/salama.jpg" alt="alt" width="50%" height="50%"  title="Tämä kuva vaihtuu joskus gifiin 👀">
 
 
 ## Mistä koostuu ja miten se toimii
@@ -34,7 +34,7 @@ Ohjelmointi hoituu Arduinon ISP:n kautta.
 
 | **Komponetti** | **KPL** | **Huomautukset** |
 | :--- | :--- | :--- |
-| ATtiny861a SOIC | 1 | S/SU |
+| ATtiny861a SOIC | 1 |  |
 | 3 mm diffusoitu LED | 32 | |
 | 110 Ohm 1206/1210 SMD vastus | 4 | Sinisille, valkoisille, vihreille ledeille |
 | 150 Ohm 1206/1210 SMD vastus | 4 | Keltaisille, punaisille ledeille |
@@ -42,7 +42,7 @@ Ohjelmointi hoituu Arduinon ISP:n kautta.
 | 6 pinnisen piikkirima | - | Ohjelmointia varten |
 | Kuumaliimaa | - | Ledien suojaamiseen |
 | USB kaapeli | - | Sopivan pituinen, vaikka 1 m |
-| Haalarimerki | 1 | :-) |
+| Haalarimerkki | 1 | :-) |
 
 <!---
 | **Komponetti** | **KPL** | **Huomautukset** |
