@@ -168,8 +168,8 @@ Juota sitten 5V ja GND piirilevyyn.
     #
 3. Src hakemistosta löytyy tiedostot lediportit_oikein.h ja lediportit_väärin.h joista jompikumpi ylikirjoitetaan lediportit.h tiedostoon jos ledit on juotettu väärin päin.
 
-   Toinen vaihtoehto on käyttää valmiiksi compilattuja koodeja pre_compiled hakemistosta.
-   Jolloin seuraavassa kohdassa käytetään a.out siijaan joka oikein.out tai vaarin.out.
+   Vaihtoehtoisesti voi käyttää valmiiksi käännettyjä koodeja pre_compiled hakemistosta.
+   Jolloin seuraavassa kohdassa käytetään "a.out" sijaan joko "oikein.out" tai "vaarin.out".
    #
 4. Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
 
