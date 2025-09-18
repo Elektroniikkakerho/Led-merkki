@@ -69,8 +69,9 @@ Ohjelmointi hoituu Arduinon ISP:n kautta.
 | [SIK](kicad/possu) | OTiT | [YRK](kicad/ymp) | [PROSE](kicad/prose) | [KONE](kicad/kone) | [ARK](kicad/ark) | [OPTIEM](kicad/optiem) |
 | :---: | :---: | :---: | :---: |  :---: |  :---: |  :---: |
 |  <img src="kicad/kuvat/possu_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/otit_komp.svg" alt="alt" width="180">  | <img src="kicad/kuvat/yrk_komp.svg" alt="alt" width="300">  | <img src="kicad/kuvat/prose_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/ark_komp.svg" alt="alt" width="200"> | <img src="kicad/kuvat/optiem_komp.svg" alt="alt" width="200"> <tr></tr>
-| <img src="kicad/kuvat/possu_läpi.svg" alt="alt" width="200">  |   |   |   | | | <tr></tr>
 | <img src="kicad/kuvat/possu_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/otit_led.svg" alt="alt" width="180"> | <img src="kicad/kuvat/yrk_led.svg" alt="alt" width="300"> | <img src="kicad/kuvat/prose_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/kone_led.svg" alt="alt" width="200"> |  <img src="kicad/kuvat/ark_led.svg" alt="alt" width="200"> | <img src="kicad/kuvat/optiem_led.svg" alt="alt" width="200">
+<!---| <img src="kicad/kuvat/possu_läpi.svg" alt="alt" width="200">  |   |   |   | | | <tr></tr> --->
+
 
 ## Ohjeet piirilevyn tekoon
 <details>
@@ -140,55 +141,58 @@ Juota sitten 5V ja GND piirilevyyn.
 <!--<details>
 <summary><b>Näytä</b></summary> -->
 
-Ensiksi Arduinoon pitää puskea ISP kooodit.
- 
-File > Examples > 11.ArduinoISP
+1. Ensiksi Arduinoon pitää puskea ISP kooodit.
 
-Verifoi ja uploadaa sketch.
+    ```
+    File > Examples > 11.ArduinoISP
+    ```
+    Verifoi ja uploadaa sketch.
+    <br/><br/>
 
-```
-Salaman ohjelmointiliittimen pinnit keskeltä reunalle:
+  
+2.  Merkin ohjelmointiliittimen pinnit keskeltä reunalle:
 
-Nro:  Nimi:   Arduinon pinni (nano):
+    ```
+    Nro:  Nimi:   Arduinon pinni (nano):
+    
+    6:    Reset   10
+    5:    GND     GND
+    4:    VCC     VCC
+    3:    SCK     13
+    2:    MISO    12
+    1:    MOSI    11
+    
+    Muista vetää arduinon Reset ylös. Ardu nollautuu kun sarjaliikenne alotetaan....
+    ```
 
-6:    Reset   10
-5:    GND     GND
-4:    VCC     VCC
-3:    SCK     13
-2:    MISO    12
-1:    MOSI    11
+3. Src hakemistosta löytyy tiedostot lediportit_oikein.h ja lediportit_väärin.h joista jompikumpi ylikirjoitetaan lediportit.h tiedostoon jos ledit on juotettu väärin päin.
+    
+4. Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
 
-Muista vetää arduinon Reset ylös. Ardu nollautuu kun sarjaliikenne alotetaan....
-```
-
-Src hakemistosta löytyy tiedostot lediportit_oikein.h ja lediportit_väärin.h joista jompikumpi ylikirjoitetaan lediportit.h tiedostoon jos ledit on juotettu väärin päin.
-
-Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
-
-#####  Unix-like
-
-```
-// kääntäminen
-avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL  
-
-// Fläsäys käyttäen arduino-isp:tä
-avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U flash:w:a.out
-
-// Fuse asetukset käyttäen arduino-isp:tä
-avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
-```
-##### Windows
-
-```
-// kääntäminen
-avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL
-
-// Fläsäys käyttäen arduino-isp:tä
-avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U flash:w:a.out
-
-// Fuse asetukset käyttäen arduino-isp:tä
-avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
-```
-Windowsilla avrdude pitää olla ympäristömuuttujissa. Toinen vaihtoehto on ajaa komento "\Arduino\hardware\tools\avr\bin"-kansiossa.
+   #####  Unix-like
+   
+   ```
+   // kääntäminen
+   avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL  
+   
+   // Fläsäys käyttäen arduino-isp:tä
+   avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U flash:w:a.out
+   
+   // Fuse asetukset käyttäen arduino-isp:tä
+   avrdude -c avrisp -p t861 -B3 -P /dev/ttyUSB0 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
+   ```
+   ##### Windows
+   
+   ```
+   // kääntäminen
+   avr-gcc -mmcu=attiny861 vilkutus.c salama.c -I./ -Os -DF_CPU=8000000UL
+   
+   // Fläsäys käyttäen arduino-isp:tä
+   avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U flash:w:a.out
+   
+   // Fuse asetukset käyttäen arduino-isp:tä
+   avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
+   ```
+   Windowsilla avrdude pitää olla ympäristömuuttujissa. Toinen vaihtoehto on ajaa komento "\Arduino\hardware\tools\avr\bin"-kansiossa.
 
 <!--</details> -->
