@@ -84,7 +84,7 @@ Tee vaikka syövyttämällä tai jyrsimällä :D
 <summary><b>Näytä</b></summary>
 -->
 
-Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
+**Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.**
 
 1. Piirilevyyn juotetaan 4 SMD vastusta ja 1 SMD kondensaattori.
    Helpointen ja nätein tapa juottaa ne on laittamalla yhteen pädiin vähän tinaa ja sitten varovasti työntämällä komponetti sulaa tinaa, niin ettei se jää "ilmaan".
@@ -92,23 +92,24 @@ Nyt kun sinulla on piirilevy, laitetaampa siihen komponentit kiinni.
 
    Vastuksilla ei ole väliä kummin päin ne on laitettu, kuhan numero puoli on ylöspäin ja suhteellisen suoraan laitettu, se on hyvä.
    Kondensaattorin suunta pitää kattoa piirikaaviosta.
-
+   #
+ 
 2. Piirin juottaminen onnistuu helpointen siten, että juotat ensin yhden kulman kiinni. Sulata juotos, jos piiri on vinossa.
    Tarkista, että piirin kaikki jalat ovat pädien päällä. Ei ilmassa.
    Juota sitten toinen vastakkainen kulma.
 
    Loput jalat voi juottaa yksi kerrallaan.
    Tai jos haluaa kokeilla nopeammalla tavalla niin veto juottamalla saa yhden puolen yhdehllä vedolla*. [Esimerkki video...](https://www.youtube.com/results?search_query=drag+soldering)
-   
+   #
 3. 6-pinninen piikkirima on ohjelmointia varten, juottaminen onnistuu samalla tavalla kuin vastukset.
-
+   #
 4. USB kaapelista pitää leikata toinen pää pois.
 Kuori 5v and GND johdot joko saksilla tai kuorimilla.
 Juota sitten 5V ja GND piirilevyyn.
 
    Tähän kannattaa käyttää USB kaapelia jossa on vain 5V ja GND tai semmosta kaapelia jossa on paksut sisäiset johtimet.
 
-
+   #
 6. Ledien juottamisessa on suurin työmaa merkin valmistuksessa. Työtä aiheuttaa lähinnä ledin painaminen merkistä läpi. Ensin pitää huomioida polariteetti. Jos olet nähnyt paljon vaivaa että olet laittanut ledit miten sattuu niin voipi harmittaa..
 
    Pidä mielessä: + = pyöreä läpiveto, pidempi jalka ledissä. - = neliö läpiveto, lyhyempi jalka.
@@ -118,18 +119,18 @@ Juota sitten 5V ja GND piirilevyyn.
 
    Jos jostakin syystä, olet juottanut kaikki ledin väärin päin. Erinomaista, nyt ledit ei toimi.
    Onneksi on olemassa koodin pätkä joka vaihtaa virran suunnan.
-
+   #
 8. Hyppää kohtaan "Ohjelmointi"
-
+   #
 9. Sitten kun ohjelmisto on flashatty ja tarkistettu, että kaikki ledit toimiii niinkuin pitäisi, piikkirima otetaan pois. Joko imusukkaa / tinapumppua käyttäen tai sitten lämmittämällä tinaa kolvilla, tekemällä veto liikkeitä.
-
+    #
 10. Tässä kohtaan on hyvä kokeilla laittaa merkki powerbankkiin kiinni. Jos merkki sammuu itsestään, se voi hyvinkin johtua siitä, että merkki on liian energiatehokas :D
     Esim. SIK:in possu merkki syöpi n. 5-20 ma riippuen ledien tilasta.
 
     Tämän ongelman saa korjattua juottamalla ylimääräisen vastuksen 5V ja GND väliin.
     Esim. Juottamalla 110 ohmin vastuksen, merkki syö ~60 ma.
     Vastuksen suuruus riippuu powerbankistä. Joissakin on joko suurempi tai pienempi minimi virta vaatimus. 
-
+    #
 12. Lopuksi, laita kuumaliimaa ledien ympärille suojausta varten.
    Ei ole pakko jos et halua.
 
@@ -166,6 +167,9 @@ Juota sitten 5V ja GND piirilevyyn.
     ```
 
 3. Src hakemistosta löytyy tiedostot lediportit_oikein.h ja lediportit_väärin.h joista jompikumpi ylikirjoitetaan lediportit.h tiedostoon jos ledit on juotettu väärin päin.
+
+   Toinen vaihtoehto on käyttää valmiiksi compilattuja koodeja pre_compiled hakemistosta.
+   Jolloin seuraavassa kohdassa käytetään a.out siijaan joka oikein.out tai vaarin.out.
     
 4. Koodin kääntämiseen ja ohjelman levylle siirtämiseen komennot ovat:
 
