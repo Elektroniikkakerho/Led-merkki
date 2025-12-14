@@ -1,5 +1,6 @@
 #include <avr/io.h>
-#include <vilkutus.h>
+#include "vilkutus.h"
+#include "vilkutus.c"
 
 void himmennys(uint16_t kerrat, uint8_t nopeus) //(kerrat = montako kertaa kydn koko kuvio lpi, nopeus = montako kertaa kutsutaan vilkutusta ennenkuin vaihdetaan svy)
    {

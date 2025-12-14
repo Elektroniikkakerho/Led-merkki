@@ -1,7 +1,11 @@
 #include <avr/io.h>
-#include <vilkutus.h>
-#include <lediportit.h>
 #include <util/delay.h>
+
+#include "vilkutus.h"
+
+#include "lediportit.h"             // Mikäli juotit ledit väärin päin,
+// #include "lediportit_vaarin.h"   // Vaihda tästä otsikko tiedosto.
+
 
 ///     K0 0
 #define K1 0.001

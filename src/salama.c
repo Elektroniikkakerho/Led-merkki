@@ -1,7 +1,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 
-#include <kuviot.c>
+#include "kuviot.c"
 
 
 
