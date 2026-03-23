@@ -228,13 +228,17 @@ kokeile toista baudratea tai ottamalla "-B3" pois.
 
 ```bash
 # Fläsäys käyttäen arduino-isp:tä
-avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U flash:w:a.out
+avrdude -c avrisp -p t861 -P COM3 -b 19200 -U flash:w:a.out
 
 # Fuse asetukset käyttäen arduino-isp:tä
-avrdude -C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -c avrisp -p t861 -B3 -P COM7 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
+avrdude -c avrisp -p t861 -P COM3 -b 19200 -U lfuse:w:0xe2:m -U hfuse:w:0xdf:m
+
 ```
 Windowsilla avrdude pitää olla ympäristömuuttujissa.  
 Toinen vaihtoehto on ajaa komento "\Arduino\hardware\tools\avr\bin"-kansiossa.
+
+Jos siirtämisen aikana tulee error,  
+kokeile toista baudratea tai lisäämällä "-B3" kuten Unix-like komennoissa.
 
 
 ## [5. Hyppää kohtaan "Piikkiriman poisto"](#6-piikkiriman-poisto)
